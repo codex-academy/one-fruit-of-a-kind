@@ -1,0 +1,38 @@
+
+body {
+	font-family: arial;
+	color: white;
+	background-color: dodgerblue;
+  }
+
+.container {
+	margin: auto;
+	width: 80%;
+}
+  
+  input[type="text"] {
+	width: 15em;
+	padding: 0.5em;
+  }
+  
+  input[type="button"] {
+	margin: 0.5em;
+	width: 10em;
+	padding: 0.5em;
+	background-color: gold;
+  }
+  
+  .msg {
+	margin-bottom: 0.75em;
+  }
+  
+  .message {
+	padding: 0.5em;
+	border: 1px solid;
+	height: 2em;
+	width: 20em;
+	background-color: deepskyblue;
+	color: white;
+	margin-bottom: 1em;
+	border-radius: 0.25em;
+  }
