@@ -29,6 +29,21 @@ To prevent any caching issues start the server with this command:
 ```
  http-servr -c-1
 ``` 
+
+## Storing a Factory Functions state in localStorage
+
+To ensure that this widget can keep it's state after a refresh we need store it's state in the `localStorage` and the read the state back from `localStorage` again.
+
+To do that we need to:
+
+* Ensure the Factory function can export it's state (it has a function that returns it's state),
+* and that it can initialize it's state at Factory function instantiation.
+
+* Once done with that we need to make sure that the Factory function state is written to `localStorage`,
+* and then that the state stored in `localStorage` is read back into the Factory function when the widget reloads.
+
+* To store application state which is an Object into `localStorage` we needs to use `JSON.stringify` to convert the Object into a string that can be stored in `localStorage`,
+* then then we need to use `JSON.parse` to convert the string stored in `localStorage` back to an Object.
  
 
 
