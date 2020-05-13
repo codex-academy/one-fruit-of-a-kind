@@ -83,7 +83,7 @@ localStorage["fruitState"] = fruitStateString;
 
 ### Initialize the Factory Function state on instantiation
 
-Once the state is stored in `localStorage` it needs to be from there upon Widget initialization and stored in the Factory Function.
+Once the state is stored in `localStorage` it needs to be retrieved from `localStorage` upon Widget initialization and stored in the Factory Function.
 
 > All this code sits out side of any Event Listeners and executes once upon once the Widget loads.
 
