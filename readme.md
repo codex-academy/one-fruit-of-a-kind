@@ -27,7 +27,7 @@ Open the site in a browser at: `http://localhost:8080` or at the appropriate por
 To prevent any caching issues start the server with this command:
 
 ```
- http-servr -c-1
+ http-server -c-1
 ``` 
 
 ## Storing a Factory Functions state in localStorage
