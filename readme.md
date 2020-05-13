@@ -85,7 +85,7 @@ localStorage["fruitState"] = fruitStateString;
 
 Once the state is stored in `localStorage` it needs to be retrieved from `localStorage` upon Widget initialization and stored in the Factory Function.
 
-> All this code sits out side of any Event Listeners and executes once upon once the Widget loads.
+> This code sits out side of any Event Listeners and executes when the Widget loads for the first time.
 
 ```js
 const storedFruitState = localStorage["fruitState"];
@@ -97,7 +97,7 @@ const fruitState = JSON.parse(storedFruitState);
 const oneFruitOfKindOnly = OneFruitOfKindOnly(fruitState);
 ```
 
-The factory function should look like this inside:
+The factory function should look like this inside to initialize the internal map's state.
 
 ```js
 
