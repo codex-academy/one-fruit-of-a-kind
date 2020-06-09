@@ -1,7 +1,7 @@
 
-function OneFruitOfKindOnly() {
+function OneFruitOfKindOnly(fruitsEatenParam) {
   
-	const hasEatenMap = {
+	const hasEatenMap = fruitsEatenParam || {
 	  'apple' : 0,
 	  'pear' : 0,
 	  'orange' : 0
@@ -18,9 +18,15 @@ function OneFruitOfKindOnly() {
 		  return"You already eaten a " + fruitEaten + " today!";
 	  }
 	}
+
+	function fruitsEaten() {
+		return hasEatenMap;
+	}
+	
 	
 	return { 
-	  eat
+	  eat,
+	  fruitsEaten
 	};
   }
   

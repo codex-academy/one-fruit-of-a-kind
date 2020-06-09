@@ -20,7 +20,16 @@ describe("One Fruit of a kind", function() {
 	});
 
 	it("should be able apple to remember that an apple was eaten before", function() {
-		const oneFruitOfKindOnly = OneFruitOfKindOnly();
+
+		const previousData = {
+			'apple' : 1,
+			'pear' : 0,
+			'orange' : 0
+		};
+
+
+		const oneFruitOfKindOnly = OneFruitOfKindOnly(previousData);
+
 		const response = oneFruitOfKindOnly.eat("apple");
 		assert.equal("You already eaten a apple today!", response);
 	});

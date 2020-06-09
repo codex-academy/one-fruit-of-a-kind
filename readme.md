@@ -97,7 +97,7 @@ const fruitState = JSON.parse(storedFruitState);
 const oneFruitOfKindOnly = OneFruitOfKindOnly(fruitState);
 ```
 
-The factory function should look like this inside:
+The Factory Function should look like this inside:
 
 ```js
 
